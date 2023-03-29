@@ -1,0 +1,48 @@
+/* body {
+    display: flex;
+} */
+
+body {
+    background-image: url("https://www.meteorologiaenred.com/wp-content/uploads/2017/01/cielo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.caja {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color:aquamarine;
+    margin: 10px;
+    padding: 10px;
+}
+
+ul > li > ol {
+    border-top: 2px solid yellow;
+}
+
+#boton {
+    height: 25px;
+    width: 95px;
+    border: 2px solid black;
+    background-color: blanchedalmond;
+}
+
+#boton:active {
+    height: 50px;
+    width: 180px;
+    background-color: blanchedalmond;
+}
+
+#boton:hover {
+    background-color: aquamarine;
+}
+
+.clase:hover {
+    font-size: 30px;
+}
+
+img {
+    height: 500px;
+    width: 650px;
+   /* opacity: 0.2; */
+}

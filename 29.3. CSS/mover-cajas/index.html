@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: bisque;
+        }
+
+        .caja {
+            height: 250px;
+            width: 250px;
+            border: 2px solid black;
+            border-style: dashed;
+            background-color: goldenrod;
+            margin: 10px;
+        }
+
+        .roja {
+            background-color: rgb(156, 48, 48)
+        }
+
+        .azul {
+            background-color: rgb(71, 71, 198);
+        }
+
+        #contenedor {
+            display: flex; /* Activamos flexbox, tecnología de posicionamiento (lo veréis
+            con Sílvia). Al activarlo, rompemos la lógica del bloque */ 
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="contenedor">
+
+        <div class="caja roja">CAJA 1</div>
+        <div class="caja azul">CAJA 2</div>
+        <div style="background-color: darkkhaki" class="caja">CAJA 3</div>
+        <div style="background-color: rgb(53, 86, 4)" class="caja">CAJA 4</div>
+        <img src="./img/nave.jpg" alt="foto">
+
+    </div>
+</body>
+
+</html>

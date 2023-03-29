@@ -1,0 +1,31 @@
+body {
+    background-color: burlywood;
+}
+
+p {
+    color: purple;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 2px;
+    background-color: gainsboro;
+}
+
+#contenedor1 {
+    background-color: forestgreen;
+}
+
+#negrita {
+    color: black;
+}
+
+.caja {
+    background-color: rgb(159, 178, 34);
+}
+
+.caja p {
+    font-size: 30px;
+}
