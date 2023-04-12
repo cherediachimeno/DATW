@@ -1,0 +1,37 @@
+#contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    justify-items: end;
+    align-items: center;
+    height: 1000px;
+    
+}  
+
+.caja {
+    height: 100px;
+    width: 100px;
+    border: 2px black solid;
+    border-radius: 2px;
+    background-color: gainsboro;
+    margin: 5px;
+}
+
+.caja1 {
+    font-size: 35px;
+    justify-self: center;
+    grid-column: 1/3;
+    /*grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-row: 1/6;
+    /*grid-row-start: 1;
+    grid-row-end: 6; */
+}
+
+.caja2 {
+    justify-self: start;
+}
+
+.caja3 {
+    align-self: end;
+}
