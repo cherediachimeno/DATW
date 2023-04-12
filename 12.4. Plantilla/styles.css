@@ -55,7 +55,7 @@ hr {
     margin-bottom: 50px;
 }
 
-/* Our Services */
+/* Elementos generales */
 
 .title {
     display: flex;
@@ -77,10 +77,31 @@ hr {
     text-align: center;
 }
 
+p {
+    font-size: 12px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(83, 83, 83);
+    line-height: 18px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: crimson;
+    font-size: 12px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+
+}
+
+/* Our Services */ 
+
 #main-services {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
     
 }
 
@@ -101,11 +122,19 @@ hr {
     margin-right: 20px;
 }
 
-p {
-    font-size: 12px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    color: rgb(83, 83, 83);
-    line-height: 18px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+/* Our Players */
+
+#main-people {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 950px;
 }
+
+.people {
+    width: 170px;
+}
+
