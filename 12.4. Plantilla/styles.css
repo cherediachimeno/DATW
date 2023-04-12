@@ -1,0 +1,111 @@
+/* Margen externo */
+
+body {
+    padding: 10px;
+}
+
+/* Header, menú con slide */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    background-color: #E2494B;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+}
+
+#titulo h1 {
+    margin-bottom: 0px;
+}
+
+#titulo h1,
+p {
+    color: #505050;
+}
+
+hr {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+#slide {
+    text-align: center;
+}
+
+#slide h2 {
+    margin: 24px 200px 20px 195px;
+    font-size: 25px;
+    font-style: oblique;
+    color: #505050;
+}
+
+#foto {
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/* Our Services */
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.red-title {
+    display: flex;  
+    height: 30px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: crimson;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+#main-services {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+
+.grey-subs {
+    font-size: 14px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(83, 83, 83);
+}
+
+.greyicon {
+    display: flex;
+}
+
+.icon {
+    height: 25px;
+    width: 25px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+p {
+    font-size: 12px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(83, 83, 83);
+    line-height: 18px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
