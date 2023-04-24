@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Pedimos un número
+        let num = parseInt(prompt("Dime un número"));
+
+        if (num <= 1) {
+            window.alert("no calcularemos nada porque el número es menor a 1");
+        } else {
+            // Calculamos cuadrado y cubo
+            let numCuadrado = num * num;
+            let numCubo = num * num * num;
+            console.log("************************")
+            console.log("El número escogido es " + num);
+            console.log("El cuadrado es " + numCuadrado);
+            console.log("El cubo es " + numCubo);
+        }
+    </script>
+</body>
+
+</html>

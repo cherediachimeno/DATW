@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        // Web de alquiler de coches
+        let edad = parseInt(prompt('Qué edad tienes'));
+        if (edad >= 18) {
+            alert("enhorabuena, eres mayor de edad");
+            // Preguntamos si tiene carné el usuario y modificamos respuesta
+            // con lower case (reduciendo a minúscula) y trim (quitando espacios)
+            let carnet = prompt('¿Tienes carné de conducir?').toLowerCase().trim();
+            console.log(carnet);
+
+            // Condición si tienes carnet obtiene valor true
+
+            carnet = (carnet == "sí" || carnet == "si") ? true : false;
+
+            /*
+
+            if (carnet == "sí" || carnet == "si") carnet = true;
+            else carnet = false; */
+
+            // Si es true, renderizamos web
+            if (carnet) alert('perfecto, puedes ver la web');
+            else alert('ya estás tardando en sacarte el carné');
+
+        } else {
+            alert("de acuerdo. Gracias y adiós");
+        }
+
+
+        // CONDICIONALES TERNARIOS
+        /*
+        let edad = 41;
+        let mensaje;
+
+        if (edad >= 18) {
+            mensaje = "eres mayor de edad";
+        } else {
+            mensaje = "eres menor"
+        }
+
+        alert(mensaje);
+
+        let mensaje2 = edad >= 18 ? "Eres mayor de edad" : "Eres menor de edad";
+        alert(mensaje2);
+ */
+
+
+    </script>
+</body>
+
+</html>

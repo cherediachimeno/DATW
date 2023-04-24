@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let valor1 = prompt('Primer Valor');
+        let valor2 = prompt('Segundo Valor');
+        let resto1 = (valor1 % 6);
+        let resto2 = (valor2 % 6);
+
+        if (valor1 == valor2) {
+            alert(0)
+        } else if (resto1 === resto2) {
+            if (valor1 > valor2) {
+                alert('el valor más pequeño es ' + valor1);
+            } else {
+                alert('el valor más pequeño es ' + valor2);
+            }
+        } else {
+            if (valor1 < valor2) {
+                alert('el valor más grande es ' + valor2);
+            } else {
+                alert('el valor más grande es ' + valor1);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

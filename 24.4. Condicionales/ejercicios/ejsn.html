@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let temperatura = parseInt(prompt('Dime qué temperatura hace'));
+
+        if (temperatura > 40) {
+            alert('Vete a otro sitio: mucho calor');
+        } else if (temperatura <= 40 && temperatura > 30) {
+            alert('Pon el aire acondicionado');
+        } else if (temperatura <= 30 && temperatura > 20) {
+            alert('no hagas nada');
+        } else if (temperatura <= 20 && temperatura >= 10) {
+            alert('enciende la calefacción');
+        } else if (temperatura < 10) {
+            alert('vete a otro sitio: mucho frío');
+        }
+
+    </script>
+</body>
+
+</html>

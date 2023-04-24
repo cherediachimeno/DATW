@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Pedimos datos al usuario y lo grabamos en variables
+        // de tipo string
+        let enteroString1 = prompt('Dime un valor entre 25 y 75');
+        let enteroString2 = prompt('Dime otro valor entre 25 y 75');
+
+        // Las variables de tipo string las transformamos en numéricas
+        let num1 = parseInt(enteroString1);
+        let num2 = parseInt(enteroString2);
+
+        // Creo condicional. Para entrar, num1 y num2 tienen que estar en el rango
+        // de 25 a 75
+
+        if ((num1 >= 25) && (num1 <= 75) && (num2 >= 25) && (num2 <= 75)) {
+            // Cumplo condición, pues voy a grabar todos los números de dentro de
+            // num1 y num2 (por ejemplo, 74 y 26, guardaré el 7, 4, 2 y 6)
+            let string1 = enteroString1.substring(0, 1); // siguiendo ejemplo, el 7
+            let string2 = enteroString1.substring(1); // el 4
+            let string3 = enteroString2.substring(0, 1); // el 2
+            let string4 = enteroString2.substring(1); // el 6.
+
+            // Vamos a comprobar si hay coincidencias
+
+            if (string1 === string3 || string1 === string4 || string2 === string3 || string2 === string4) {
+                alert('Hay dos números iguales');
+            } else {
+                alert('NO hay dos números iguales')
+            }
+        } else {
+            alert('los números seleccionados no se encuentran en el rango');
+        }
+    </script>
+</body>
+
+</html>
