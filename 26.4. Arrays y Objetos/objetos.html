@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const people = {
+            SofiaMaza: {
+                completeName: "Sofia Maza Hurtado",
+                age: 20,
+                job: "Developer",
+                pets: {
+                    name: "Milú",
+                    animal: {
+                        type: "Dog",
+                        age: 3
+                    }
+                }
+            },
+            CarlosHeredia: {
+                completeName: "Carlos Heredia Chimeno",
+                age: 22,
+                job: "Developer",
+                pets: {
+                    name: "Milú",
+                    animal: {
+                        type: "Dog",
+                        age: 3
+                    }
+                }
+            }
+        };
+
+
+        // 1º EJEMPLO TRANSFORMANDO LO QUE EL USUARIO ME DA. 
+
+        // PREGUNTO EL NOMBRE QUE QUIEREN BUSCAR
+
+        let pregunta = prompt("Dame el nombre de la persona que quieres información");
+        let nombre;
+
+
+        // HAGO UN SWITCH PARA TRANSFORMAR EL NOMBRE QUE QUIEREN BUSCAR A LA CLAVE 
+        // QUE ME VA A PERMITIR ENCONTRARLO EN EL OBJETO.
+        // POR EJEMPLO, BUSCA CARLOS, PERO, EN MI OBJETO, CARLOS ES CARLOSHEREDIA.
+        switch (pregunta) {
+            case "Carlos":
+                nombre = "CarlosHeredia";
+                break;
+            case "carlos":
+                nombre = "CarlosHeredia";
+                break;
+            case "Sofia":
+                nombre = "SofiaMaza";
+                break;
+            default:
+                nombre = "nada";
+                alert("NOMBRE no encontrado");
+        }
+
+        // COMPRUEBO SI EXISTE
+
+        if (people[nombre]) {
+            alert("ENCONTRADO!!!");
+            alert("AQUÍ NOMBRE COMPLETO: " + people[nombre]["completeName"]);
+        } else {
+            alert("NO ENCONTRADO")
+        };
+
+        /*
+         // 2º EJEMPLO BUSCO DIRECTAMENTE LO QUE EL USUARIO ME DA
+
+        // PREGUNTO EL NOMBRE QUE QUIEREN BUSCAR
+
+        let nombre = prompt("Dame el nombre de la persona que quieres información");
+
+        // COMPRUEBO QUE EXISTE, Y SI EXISTE, MUESTRO MÁS INFORMACIÓN
+
+        if (people[nombre]) {
+            alert("ENCONTRADO!!!");
+            alert("AQUÍ NOMBRE COMPLETO: " + people[nombre]["completeName"]);
+        } else {
+            alert("NO ENCONTRADO")
+        };
+        */
+
+    </script>
+</body>
+
+</html>
