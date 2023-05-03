@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+</style>
+
+<body>
+    <div id="div1"></div>
+    <script>
+        let animals = {
+            rhino: {
+                name: "rhino",
+                picture: "https://wildlifesos.org/wp-content/uploads/2022/09/Greater_one_horned_rhino_wikimedia_commons-1920x900.jpg",
+                age: 10,
+                eyeColor: "blue",
+            },
+            elephant: {
+                name: "elephant",
+                picture: "https://files.worldwildlife.org/wwfcmsprod/images/African_Elephant_Kenya_112367/story_full_width/qxyqxqjtu_WW187785.jpg",
+                age: 13,
+                eyeColor: "green",
+            },
+        };
+
+        let datos = window.prompt("Introduzca animal: rhino o elephant");
+
+
+        if (animals[datos]) {
+            document.getElementById("div1").innerHTML += `<h1>Datos del animal</h1>`;
+            document.getElementById("div1").innerHTML += `
+            <div style="width: 500px; height: 500px">
+            <img src="${animals[datos].picture}" style="width: 50%" />
+            <h1>${animals[datos].name}</h1>
+            <p class="div1">Edad:</p>
+            <p>${animals[datos].age}</p>
+            </div>`;
+        } else {
+            window.alert("El nombre introducido no es correcto");
+        }
+    </script>
+</body>
+
+</html>

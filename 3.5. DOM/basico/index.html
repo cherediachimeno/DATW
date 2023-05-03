@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./demo.js"></script>
+    <style>
+        #espacioLibre {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            border: 2px black solid;
+            background-color: ghostwhite;
+        }
+
+        .card:hover {
+            border: 2px rgb(127, 116, 116) solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="titulo">Hola estoy manipulando el DOM</h1>
+    <p id="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsam consequatur vel, exercitationem
+        porro illo
+        facere deleniti sequi quos ipsum officiis consequuntur dolorum voluptatem ab repudiandae, enim vitae eveniet
+        fugiat.
+        Repellendus quae quaerat deleniti amet tempora magnam quia delectus. Quas in asperiores iusto hic saepe deleniti
+        nulla sed quam, architecto nostrum deserunt expedita molestias error qui doloremque praesentium maiores impedit.
+        Optio odio accusantium commodi, tempora voluptatem cum laborum modi, cumque atque nostrum totam, architecto
+        explicabo necessitatibus corrupti obcaecati omnis? Voluptatem eos tempore dolor excepturi vel facere enim
+        mollitia harum odit!
+        Aperiam nisi quia est omnis maiores, doloribus dicta accusantium! Excepturi, autem? Incidunt, itaque totam.
+        Eveniet cumque consequuntur alias suscipit, assumenda exercitationem. Vero odit reprehenderit sapiente ab at et
+        impedit sit?</p>
+    <button onclick="addCard()">Add CARD</button>
+    <button onclick="modifyCSS()">Modify CSS</button>
+    <input type="button" value="Hide text" onclick="document.getElementById('parrafo').style.visibility='hidden'">
+    <input type="button" value="Show text" onclick="document.getElementById('parrafo').style.visibility='visible'">
+
+    <div id="espacioLibre">
+    </div>
+
+
+</body>
+
+</html>
