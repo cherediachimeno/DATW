@@ -6,12 +6,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #espacioLibre {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            border: 2px black solid;
+            background-color: ghostwhite;
+            padding-left: 10px;
+        }
+
+        .card:hover {
+            border: 2px rgb(127, 116, 116) solid;
+        }
+    </style>
 </head>
 
 <body>
     <h3>Bienvenido a la tienda: mira en la consola</h3>
+    <div id="imprimir">
+
+    </div>
     <!-- <script src="./demo.js"></script> -->
-    <script src="./funciones.js"></script>
+    <!-- <script src="./ejemplos.js"></script> -->
+    <script>
+
+        /*
+        let nombre = prompt("cómo te llamas");
+        // saludar();
+        let greet = () =>
+            document.getElementById("imprimir").innerHTML += `
+            <div class="card">
+            <h5>Hello ${nombre}</h5>
+            </div>
+            `
+        greet();
+
+
+        function saludar() {
+            document.getElementById("imprimir").innerHTML += `
+            <div class="card">
+            <h5>Hola ${nombre}</h5>
+            </div>
+            `
+        }
+
+        // function expression  
+
+        let myfun1 = function show() { console.log("It is a Function Expression"); }
+
+        // Anonymous function  
+
+        let myfun2 = function () { console.log("It is an Anonymous Function"); }
+
+        //Arrow function  
+        let myfun3 = () => { console.log("It is an Arrow Function"); };
+        */
+
+        let decision = prompt("dime qué quieres hacer realmente: sumar, restar o multiplicar");
+        let num1 = 10;
+        let num2 = 10;
+        switch (decision) {
+            case "sumar":
+                decision = (x, y) => { console.log("el resultado es " + (x + y)) }
+                decision(num1, num2);
+                break;
+            case "restar":
+                decision = (x, y) => { console.log("el resultado es " + x - y) }
+                decision(num1, num2);
+                break;
+        }
+
+        function sumar(x, y) {
+
+        }
+
+        function sumarTres(x, y, x)
+        /*
+        myfun1();
+        myfun2();
+        myfun3();
+
+        function show() {
+            console.log("hola mundo");
+        }
+
+        let show = () => { console.log("hola mundo"); }
+        */
+    </script>
 </body>
 
 </html>
