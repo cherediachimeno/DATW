@@ -1,0 +1,10 @@
+#brocha {
+    height: 100px;
+    width: 100px;
+}
+
+.productos {
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid black;
+}
