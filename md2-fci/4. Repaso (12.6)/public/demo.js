@@ -21,6 +21,43 @@ function insertar() {
   mostrar();
 }
 
+function editar() {
+  let nombre = document.getElementById("nombreEditar").value;
+  let funciones = document.getElementById("funcionesEditar").value;
+  let caracteristicas = document.getElementById("caracteristicasEditar").value;
+
+  let nuevo = {
+    nombre: nombre,
+    funcionalidad: funciones,
+    caracteristicas: caracteristicas,
+  };
+
+  fetch("/lista", {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(nuevo),
+  });
+  mostrar();
+}
+
+function borrar() {
+  let nombre = document.getElementById("nombreBorrar").value;
+  let nuevo = {
+    nombre: nombre,
+  };
+
+  fetch("/lista", {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(nuevo),
+  });
+  mostrar();
+}
+
 function mostrar() {
   fetch("/lista", {
     method: "GET",

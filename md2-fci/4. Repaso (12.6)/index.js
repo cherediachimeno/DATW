@@ -11,10 +11,10 @@ app.use(express.json());
 
 // Líneas de código útiles, tipo declaración variables, importaciones...
 
-const lista = require("./array");
+let lista = require("./array");
 
 // Diseñando rutas
-
+// TIPO GET
 app.get("/lista/print", (req, res) => {
   let frontend = `<div id="print" style="display: flex; flex-wrap: wrap">`;
   for (let i = 0; i < lista.length; i++) {
@@ -32,6 +32,8 @@ app.get("/lista/print", (req, res) => {
 app.get("/lista", (req, res) => {
   res.send(lista);
 });
+
+// POST, PUT Y DELETE
 
 app.post("/lista", (req, res) => {
   let objetoNuevo = {
@@ -53,6 +55,31 @@ app.post("/lista", (req, res) => {
   }
   frontend += `</div>`;
   res.send(frontend);
+});
+
+app.put("/lista", (req, res) => {
+  let nombre = req.body.nombre;
+  let funcionalidad = req.body.funcionalidad;
+  let caracteristicas = req.body.caracteristicas;
+
+  for (let i = 0; i < lista.length; i++) {
+    if (nombre == lista[i].nombre) {
+      lista[i].funcionalidad = funcionalidad;
+      lista[i].caracteristicas = caracteristicas;
+    }
+  }
+});
+
+app.delete("/lista", (req, res) => {
+  let nombre = req.body.nombre;
+  console.log(nombre);
+  for (let i = 0; i < lista.length; i++) {
+    if (nombre === lista[i].nombre) {
+      console.log("he entrado, hay coincidencia");
+      lista.splice(i, 1);
+    }
+  }
+  res.send(lista);
 });
 
 app.get("/contacto/:about", (req, res) => {
